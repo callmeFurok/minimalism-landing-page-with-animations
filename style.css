@@ -71,3 +71,28 @@ body {
         transform: translate(0);
     }
 }
+
+/*RESPONSIVE DESING*/
+@media screen and (max-width: 400px) {
+    .grid::before {
+        grid-column: 1/-1;
+        grid-row: 4/-1;
+    }
+
+    .grid__texts {
+        grid-row: 1/-2;
+        grid-column: 2/8;
+    }
+
+    .grid__title {
+        font-size: 4.8rem;
+        transform: translateY(-300%);
+    }
+
+    .grid__title--transform {
+        font-size: 2.5rem;
+        transform: translateY(600%);
+    }
+
+}
+
